@@ -1,6 +1,6 @@
 # claude-code-skills
 
-A collection of agent skills for [Claude Code](https://claude.ai/code) and other AI agents.
+A collection of skills for [Claude Code](https://claude.ai/code).
 
 ## Skills
 
