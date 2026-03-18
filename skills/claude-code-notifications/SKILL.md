@@ -11,7 +11,17 @@ Interactively set up sound and custom icon for Claude Code `Notification` hooks 
 
 ## Prerequisites Check
 
-**Before doing anything else**, verify the environment:
+**Before doing anything else**, verify the environment and detect language:
+
+### 0. Detect system language
+
+```bash
+defaults read -g AppleLanguages | head -2
+```
+
+Use the first language code returned to determine which language to use for all communication with the user throughout this skill. For example: `zh-Hant-TW` → Traditional Chinese, `ja` → Japanese, `en` → English, etc.
+
+---
 
 ### 1. Must be macOS
 
