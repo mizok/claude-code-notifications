@@ -1,0 +1,12 @@
+{
+  "name": "claude-code-notifications",
+  "description": "Set up macOS notifications with custom sound and icon for Claude Code hooks",
+  "version": "1.0.0",
+  "author": {
+    "name": "mizok"
+  },
+  "homepage": "https://github.com/mizok/claude-code-notifications",
+  "repository": "https://github.com/mizok/claude-code-notifications",
+  "license": "MIT",
+  "keywords": ["notifications", "macos", "hooks", "sound", "icon"]
+}

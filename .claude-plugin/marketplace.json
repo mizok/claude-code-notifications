@@ -1,0 +1,17 @@
+{
+  "name": "mizok-plugins",
+  "owner": {
+    "name": "mizok"
+  },
+  "plugins": [
+    {
+      "name": "claude-code-notifications",
+      "source": ".",
+      "description": "Set up macOS notifications with custom sound and icon for Claude Code hooks",
+      "version": "1.0.0",
+      "author": {
+        "name": "mizok"
+      }
+    }
+  ]
+}
