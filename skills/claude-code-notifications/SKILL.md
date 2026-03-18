@@ -207,7 +207,7 @@ Before starting, show the user this checklist:
 Uninstall progress:
 - [ ] Remove Notification hook from settings.json
 - [ ] Deregister virtual app identity from macOS Notification Center
-- [ ] Uninstall growlrrr (optional)
+- [ ] Uninstall growlrrr
 ```
 
 After each step completes, re-print the checklist with that item marked as `[x]`.
@@ -226,7 +226,7 @@ Delete the entire `Notification` entry under `hooks`.
 grrr apps remove Claude-Code --force || true
 ```
 
-### Step 3 — Uninstall growlrrr (optional)
+### Step 3 — Uninstall growlrrr
 
 ```bash
 brew uninstall growlrrr && brew untap moltenbits/tap
