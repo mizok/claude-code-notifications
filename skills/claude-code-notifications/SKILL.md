@@ -89,16 +89,18 @@ If the user skipped, omit `--appIcon` in Step 5.
 
 ### Step 5 — Create custom app
 
+**Always remove the existing app first** (no-op if it doesn't exist):
+
+```bash
+grrr apps remove Claude-Code --force
+```
+
+Then create fresh:
+
 ```bash
 grrr apps add --appId Claude-Code --appIcon '/tmp/notification-icon.png'
 # or without icon:
 grrr apps add --appId Claude-Code
-```
-
-If `Claude-Code` already exists, remove it first:
-
-```bash
-grrr apps remove Claude-Code --force
 ```
 
 ### Step 6 — Test the notification
