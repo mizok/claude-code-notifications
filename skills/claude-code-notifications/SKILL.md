@@ -68,7 +68,7 @@ Installation progress:
 - [ ] Install growlrrr
 - [ ] Remove quarantine flag
 - [ ] Prepare icon
-- [ ] Create custom app
+- [ ] Register virtual app identity with macOS Notification Center
 - [ ] Test notification
 - [ ] Update settings.json
 - [ ] Grant notification permission
@@ -145,12 +145,12 @@ iconutil -c iconset /Applications/Claude.app/Contents/Resources/electron.icns -o
 
 **If the user skipped**, omit `--appIcon` in Step 5.
 
-### Step 5 — Create custom app
+### Step 5 — Register virtual app identity with macOS Notification Center
 
 **Always remove the existing app first** (no-op if it doesn't exist):
 
 ```bash
-grrr apps remove Claude-Code --force
+grrr apps remove Claude-Code --force || true
 ```
 
 Then create fresh:
@@ -203,7 +203,7 @@ Before starting, show the user this checklist:
 ```
 Uninstall progress:
 - [ ] Remove Notification hook from settings.json
-- [ ] Remove custom app
+- [ ] Deregister virtual app identity from macOS Notification Center
 - [ ] Uninstall growlrrr (optional)
 ```
 
@@ -217,10 +217,10 @@ If the user wants to remove everything:
 
 Delete the entire `Notification` entry under `hooks`.
 
-### Step 2 — Remove the custom app
+### Step 2 — Deregister virtual app identity from macOS Notification Center
 
 ```bash
-grrr apps remove Claude-Code --force
+grrr apps remove Claude-Code --force || true
 ```
 
 ### Step 3 — Uninstall growlrrr (optional)
