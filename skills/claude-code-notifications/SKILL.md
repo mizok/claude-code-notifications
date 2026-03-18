@@ -103,7 +103,7 @@ grrr apps add --appId Claude-Code --appIcon '/tmp/notification-icon.png'
 grrr apps add --appId Claude-Code
 ```
 
-> **重要提示：** 告訴使用者，如果有設定圖示，macOS 會快取通知圖示，**必須重新開機**才能看到新圖示。
+> **Important:** If the user set a custom icon, tell them that macOS caches notification icons — a **reboot is required** for the new icon to appear.
 
 ### Step 6 — Test the notification
 
