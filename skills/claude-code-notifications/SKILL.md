@@ -107,7 +107,7 @@ test -d /Applications/Claude.app && echo "found" || echo "not found"
 If found, extract the icon:
 
 ```bash
-sips -s format png /Applications/Claude.app/Contents/Resources/electron.icns --out /tmp/notification-icon.png
+iconutil -c iconset /Applications/Claude.app/Contents/Resources/electron.icns -o /tmp/claude.iconset && cp /tmp/claude.iconset/icon_512x512.png /tmp/notification-icon.png
 ```
 
 **If the user gave a local path**, use it directly.
