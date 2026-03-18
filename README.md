@@ -1,36 +1,24 @@
-# claude-code-notifications
+# agent-skills
 
-A [Claude Code](https://claude.ai/code) skill that sets up macOS notifications with custom sound and icon for Claude Code hooks.
+A collection of agent skills for [Claude Code](https://claude.ai/code) and other AI agents.
 
-By default, Claude Code hook notifications on macOS have no sound and use a generic icon. This skill installs [growlrrr](https://github.com/moltenbits/growlrrr) and configures everything interactively — you choose the icon and sound.
+## Skills
 
-> **macOS only.** Requires Claude Code.
+### claude-code-notifications
 
-## Installation
+Sets up macOS notifications with custom sound and icon for Claude Code hooks.
+
+> **macOS only.** Requires Claude Code and Homebrew.
 
 ```bash
 npx skills add mizok/agent-skills --skill claude-code-notifications
 ```
 
-## Usage
+## Browse all skills
 
-Once installed, just say:
-
+```bash
+npx skills add mizok/agent-skills --list
 ```
-/claude-code-notifications
-```
-
-Claude will guide you through:
-1. Choosing a notification icon (URL or local file path)
-2. Choosing a notification sound
-3. Installing growlrrr
-4. Configuring `~/.claude/settings.json`
-
-## Requirements
-
-- macOS 13 (Ventura) or later
-- [Claude Code](https://claude.ai/code)
-- [Homebrew](https://brew.sh)
 
 ## License
 
