@@ -47,6 +47,24 @@ If not found, stop and tell the user:
 
 ## Execution Steps
 
+Before starting, show the user this checklist:
+
+```
+Installation progress:
+- [ ] Detect preferences (icon & sound)
+- [ ] Install growlrrr
+- [ ] Remove quarantine flag
+- [ ] Prepare icon
+- [ ] Create custom app
+- [ ] Test notification
+- [ ] Update settings.json
+- [ ] Grant notification permission
+```
+
+After each step completes, re-print the checklist with that item marked as `[x]`.
+
+---
+
 Follow these steps in order when this skill is invoked:
 
 ### Step 1 — Ask the user for preferences
@@ -166,6 +184,19 @@ Add or replace the `Notification` hook:
 If the notification does not appear, tell the user to check **System Settings → Privacy & Security** — a prompt to allow growlrrr may appear there.
 
 ## Uninstall
+
+Before starting, show the user this checklist:
+
+```
+Uninstall progress:
+- [ ] Remove Notification hook from settings.json
+- [ ] Remove custom app
+- [ ] Uninstall growlrrr (optional)
+```
+
+After each step completes, re-print the checklist with that item marked as `[x]`.
+
+---
 
 If the user wants to remove everything:
 
