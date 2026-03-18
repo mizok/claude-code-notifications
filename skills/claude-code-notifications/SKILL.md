@@ -156,7 +156,7 @@ grrr apps remove Claude-Code --force || true
 Then create fresh:
 
 > **Before running the next command**, warn the user:
-> macOS will show a notification permission prompt in the top-right corner of the screen — **"Claude-Code" Notifications** with an **Options → Allow** button. Click **Allow** before continuing, otherwise the command may hang waiting for a response.
+> After the command completes, macOS will show a notification permission prompt in the top-right corner of the screen — **"Claude-Code" Notifications** with an **Options → Allow** button. Watch for it and click **Allow** as soon as it appears.
 
 ```bash
 grrr apps add --appId Claude-Code --appIcon '/tmp/notification-icon.png'
