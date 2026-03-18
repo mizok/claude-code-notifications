@@ -47,6 +47,29 @@ If not found, stop and tell the user:
 
 ## Execution Steps
 
+### Menu — Ask what the user wants to do
+
+First, present this menu and ask the user to choose:
+
+```
+What would you like to do?
+1. Install (set up notifications from scratch)
+2. Change icon
+3. Change sound
+4. Uninstall
+```
+
+Then proceed to the corresponding section below based on their choice.
+
+- **1 → Install**: run Steps 1–8
+- **2 → Change icon**: run Steps 4–5 only (skip to Step 4, re-use existing sound from `settings.json`)
+- **3 → Change sound**: update the `--sound` value in `~/.claude/settings.json` only
+- **4 → Uninstall**: run the Uninstall section
+
+---
+
+### Install
+
 Before starting, show the user this checklist:
 
 ```
